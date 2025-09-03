@@ -1,0 +1,26 @@
+.services-page {
+  font-family: 'Poppins', sans-serif;
+  background: #FDF8F5;
+  min-height: 80vh;
+  padding: 2.5rem 0 2rem 0;
+}
+.services-page h1 {
+  font-family: 'Playfair Display', serif;
+  color: #9C5C2A;
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.services-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+@media (max-width: 700px) {
+  .services-grid {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+}

@@ -1,0 +1,27 @@
+.about-page {
+  font-family: 'Poppins', sans-serif;
+  background: #FDF8F5;
+  min-height: 80vh;
+  padding: 2.5rem 0 2rem 0;
+}
+.about-page h1 {
+  font-family: 'Playfair Display', serif;
+  color: #9C5C2A;
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.about-content {
+  max-width: 700px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 2px 16px rgba(156,92,42,0.06);
+  padding: 2rem 1.5rem;
+  font-size: 1.08rem;
+  color: #333333;
+}
+.about-content p {
+  margin-bottom: 1.2rem;
+  line-height: 1.7;
+}

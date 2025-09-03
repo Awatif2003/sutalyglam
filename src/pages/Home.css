@@ -1,0 +1,51 @@
+.home-page {
+  font-family: 'Poppins', sans-serif;
+  background: #FDF8F5;
+}
+.featured-section {
+  margin: 2.5rem auto;
+  max-width: 1100px;
+  padding: 0 1rem;
+}
+.featured-section h2 {
+  font-family: 'Playfair Display', serif;
+  color: #9C5C2A;
+  font-size: 2rem;
+  margin-bottom: 1.2rem;
+  text-align: center;
+}
+.featured-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+.testimonial-section {
+  margin: 2.5rem auto 3.5rem auto;
+  max-width: 900px;
+  padding: 0 1rem;
+}
+.testimonial-section h2 {
+  font-family: 'Playfair Display', serif;
+  color: #A86835;
+  font-size: 2rem;
+  margin-bottom: 1.2rem;
+  text-align: center;
+}
+.testimonial-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+@media (max-width: 900px) {
+  .featured-grid, .testimonial-grid {
+    gap: 1rem;
+  }
+}
+@media (max-width: 700px) {
+  .featured-grid, .testimonial-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+}

@@ -1,0 +1,59 @@
+.booking-page {
+  font-family: 'Poppins', sans-serif;
+  background: #FDF8F5;
+  min-height: 80vh;
+  padding: 2.5rem 0 2rem 0;
+}
+.booking-page h1 {
+  font-family: 'Playfair Display', serif;
+  color: #9C5C2A;
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.booking-form {
+  max-width: 640px;
+  width: 100%;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 2px 16px rgba(156,92,42,0.06);
+  padding: 2rem 1.5rem 1.5rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+.booking-form input, .booking-form select {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  padding: 0.7rem 1rem;
+  border-radius: 8px;
+  border: 1px solid #A86835;
+  background: #FDF8F5;
+  color: #333333;
+  outline: none;
+  transition: border 0.2s;
+}
+.booking-form input:focus, .booking-form select:focus {
+  border: 2px solid #9C5C2A;
+}
+.booking-form button {
+  background: linear-gradient(90deg, #9C5C2A 60%, #A86835 100%);
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 8px;
+  padding: 0.8rem 0;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  transition: background 0.2s;
+}
+.booking-form button:hover {
+  background: linear-gradient(90deg, #A86835 60%, #9C5C2A 100%);
+  color: #fff;
+}
+
+@media (max-width: 700px) {
+  .booking-form { max-width: 95%; padding: 1rem; }
+}

@@ -52,11 +52,10 @@
   background: #fff;
   border-radius: 18px;
   box-shadow: 0 2px 16px rgba(156,92,42,0.06);
-  padding: 1.2rem 0.7rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding: 0.6rem 0.6rem;
+  display: block;
 }
+.contact-map iframe { display:block; width:100%; height:220px; border-radius:10px; }
 @media (max-width: 900px) {
   .contact-info {
     flex-direction: column;

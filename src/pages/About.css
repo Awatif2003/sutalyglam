@@ -1,8 +1,11 @@
 .about-page {
   font-family: 'Poppins', sans-serif;
-  background: #FDF8F5;
-  min-height: 80vh;
-  padding: 2.5rem 0 2rem 0;
+  background: #fafafa;
+  color: #222;
+  min-height: 60vh;
+  padding: 40px 16px;
+  display: flex;
+  justify-content: center;
 }
 .about-page h1 {
   font-family: 'Playfair Display', serif;
@@ -24,4 +27,123 @@
 .about-content p {
   margin-bottom: 1.2rem;
   line-height: 1.7;
+}
+
+.about-container {
+  max-width: 980px;
+  width: 100%;
+  background: #ffffff;
+  padding: 28px;
+  border-radius: 10px;
+  box-shadow: 0 6px 22px rgba(15, 23, 42, 0.06);
+  line-height: 1.6;
+}
+
+.about-hero {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 1.25rem;
+  flex-direction: column;
+  text-align: center;
+}
+
+.about-logo {
+  width: 96px;
+  height: 96px;
+  object-fit: contain;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  margin-bottom: 8px;
+}
+
+.about-hero-text { flex: 1; }
+
+.about-cta { margin-top: 12px; }
+.about-cta .btn-primary { padding: 10px 16px; font-weight: 600; border-radius: 10px; }
+
+.about-lead { font-size: 17px; color: #333; }
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.about-grid { display: block; }
+
+.about-hero.centered { max-width: 760px; margin: 0 auto 18px auto; }
+.stacked { max-width: 760px; margin: 0 auto 18px auto; }
+
+#about-title {
+  margin: 0 0 12px 0;
+  font-size: 30px;
+  letter-spacing: 0.2px;
+}
+
+.about-lead {
+  margin: 0 0 18px 0;
+  font-size: 16px;
+  color: #2d2d2d;
+}
+
+.section-title {
+  margin: 8px 0 10px 0;
+  font-size: 18px;
+  color: #9C5C2A; /* match SutalyGlamTreat title color */
+}
+
+/* Lists: bullets aligned at start */
+.about-highlights {
+  display: block;
+  list-style: none; /* remove default bullets */
+  margin: 0 0 14px 0; /* tighter spacing */
+  padding: 0;
+  color: #374151;
+  font-size: 15px;
+}
+
+.about-highlights li {
+  margin: 6px 0;
+  padding-left: 0.5rem;
+}
+
+/* Divider */
+.about-divider {
+  border: 0;
+  height: 1px;
+  background: linear-gradient(90deg, rgba(0,0,0,0.06), rgba(0,0,0,0.02));
+  margin: 18px 0;
+}
+
+/* Swahili paragraph styling */
+.about-swahili {
+  margin: 0 0 12px 0;
+  font-size: 15px;
+  color: #444;
+  font-style: normal;
+}
+
+/* responsive */
+@media (max-width: 680px) {
+  .about-container { padding: 18px; }
+  #about-title { font-size: 22px; }
+  .section-title { font-size: 16px; }
+  .about-highlights { margin-left: 1rem; font-size: 14px; }
+  .about-grid { grid-template-columns: 1fr; }
+  .about-hero { flex-direction: column; align-items: center; text-align: center; }
+  .about-logo { width: 84px; height: 84px; }
+}
+
+/* Hours list */
+.about-hours { margin: 18px 0 8px; text-align: center; }
+.about-hours .section-title { margin-bottom: 12px; }
+.hours-list { list-style: none; padding: 0; margin: 16px auto 0; max-width: 420px; width: 100%; }
+.hours-item { display:flex; justify-content:space-between; align-items:center; padding:8px 10px; border-radius:8px; background:#fff; margin-bottom:8px; box-shadow:0 1px 0 rgba(0,0,0,0.04); width: 100%; box-sizing: border-box; }
+.hours-day { font-weight:400; color:#111827; flex:1; text-align:center; }
+.hours-time { color:#6b7280; flex:1; text-align:center; }
+
+@media (max-width:480px) {
+  .hours-item { padding:8px; font-size:14px }
 }

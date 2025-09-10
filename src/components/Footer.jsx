@@ -8,7 +8,7 @@ const Footer = () => (
       <div className="footer-content">
         <img src={logo} alt="Sutaly Glam Treat logo" className="footer-logo-img" />
         <div className="footer-info">
-          <p>Contact: +255 123 456 789</p>
+          <p>Contact: +255 628 614 548</p>
           <p>Location: Kisonge Thabit Kombo Building, Zanzibar</p>
         </div>
         <div className="footer-socials">

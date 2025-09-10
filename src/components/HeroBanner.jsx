@@ -8,6 +8,7 @@ const HeroBanner = () => (
       <img src={logo} alt="Sutaly Glam Treat logo" className="hero-logo" />
       <h1 className="brand-name">Sutaly Glam Treat</h1>
       <p className="brand-caption">Let your skin breathe</p>
+  <a href="#treatments" className="hero-cta">Book Now</a>
     </div>
   </section>
 );

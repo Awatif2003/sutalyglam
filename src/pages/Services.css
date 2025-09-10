@@ -4,23 +4,98 @@
   min-height: 80vh;
   padding: 2.5rem 0 2rem 0;
 }
+
 .services-page h1 {
-  font-family: 'Playfair Display', serif;
-  color: #9C5C2A;
-  font-size: 2.2rem;
-  margin-bottom: 2rem;
   text-align: center;
+  color: #9C5C2A;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 1rem;
 }
-.services-grid {
+
+.services-list {
+  display: grid;
+  gap: 1rem;
+  max-width: 1100px;
+  margin: 1.5rem auto;
+  width: 100%;
+  padding: 0 1rem;
+}
+
+.service-row {
+  background: #fff;
+  padding: 14px 16px;
+  border-radius: 12px;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1.5rem;
+  align-items: center;
+  gap: 20px;
+  box-shadow: 0 8px 28px rgba(15,23,42,0.06);
+  width: 100%;
 }
-@media (max-width: 700px) {
-  .services-grid {
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
+
+.service-img {
+  width: 96px;
+  height: 96px;
+  object-fit: cover;
+  border-radius: 50%;
+  flex: 0 0 96px;
+}
+
+.service-name {
+  flex: 1;
+  font-weight: 700;
+  text-align: center;
+  color: #222;
+  font-size: 1.05rem;
+}
+
+.service-action {
+  width: 180px;
+  text-align: right;
+}
+
+.service-action .btn-primary {
+  padding: 12px 16px;
+  font-weight: 700;
+  border-radius: 10px;
+}
+
+@media (max-width: 900px) {
+  .service-row { gap: 12px; }
+  .service-img { width: 84px; height: 84px; flex: 0 0 84px; }
+  .service-action { width: 140px; }
+}
+
+@media (max-width: 680px) {
+  .services-list { gap: 12px; }
+  .service-row { flex-direction: row; align-items: center; }
+  .service-img { width: 64px; height: 64px; flex: 0 0 64px; }
+  .service-name { text-align: left; font-size: 0.98rem; }
+  .service-action { width: 110px; }
+}
+
+/* make the top VideoCard full-bleed and wider on large screens (kept in case used) */
+.services-page > .video-card {
+  width: 100vw;
+  max-width: none;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  padding: 1rem 0; /* give vertical breathing room */
+}
+
+.services-page > .video-card .video-element {
+  max-height: 720px;
+  border-radius: 0; /* full-bleed looks better without rounded corners */
+  box-shadow: none;
+}
+
+@media (max-width: 900px) {
+  .services-page > .video-card {
+    width: 96%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .services-page > .video-card .video-element {
+    border-radius: 12px;
+    max-height: 420px;
   }
 }

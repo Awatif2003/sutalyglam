@@ -1,0 +1,24 @@
+.video-card {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto 1.5rem auto;
+  display: flex;
+  justify-content: center;
+}
+.video-element {
+  width: 100%;
+  height: auto;
+  max-height: 620px;
+  border-radius: 14px;
+  background: #000;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+  object-fit: cover;
+}
+
+@media (max-width: 900px) {
+  .video-element { max-height: 360px; border-radius: 12px; }
+}
+
+@media (max-width: 480px) {
+  .video-element { max-height: 220px; border-radius: 10px; }
+}

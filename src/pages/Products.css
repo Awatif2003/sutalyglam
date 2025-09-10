@@ -12,15 +12,33 @@
   text-align: center;
 }
 .products-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  width: min(1100px, 94%);
+  margin: 0 auto 1.5rem auto;
+}
+.category-section {
+  margin: 2rem 0;
+}
+.category-title {
+  font-family: 'Playfair Display', serif;
+  color: #7a4a2a;
+  margin: 0 0 1rem 0;
+  font-size: 1.4rem;
+  text-align: left;
+  width: min(1100px, 94%);
+  margin-left: auto;
+  margin-right: auto;
 }
 @media (max-width: 700px) {
   .products-grid {
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0.6rem;
+  }
+}
+@media (min-width: 701px) and (max-width: 1023px) {
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }

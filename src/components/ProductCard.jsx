@@ -1,11 +1,9 @@
 import React from 'react';
 import './ProductCard.css';
 
-const ProductCard = ({ name, image, price }) => (
-  <div className="product-card">
+const ProductCard = ({ name, image }) => (
+  <div className="product-card" aria-label={name} title={name}>
     <img src={image} alt={name} className="product-image" />
-    <h3 className="product-name">{name}</h3>
-    <p className="product-price">{price}</p>
   </div>
 );
 
